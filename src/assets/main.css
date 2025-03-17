@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+
+
+body{
+    background-color: #171F12;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Inter-Black";
+    src: url('/fonts/Inter-Black.otf');
+}
+
+@font-face {
+    font-family: "Inter-Medium";
+    src: url('/fonts/Inter-Medium.otf');
+}
+
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url('/fonts/Inter-SemiBold.otf');
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url('/fonts/Inter-Regular.otf');
+}
