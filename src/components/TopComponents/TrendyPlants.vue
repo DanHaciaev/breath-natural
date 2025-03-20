@@ -126,7 +126,7 @@
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 401px) {
     .zag{
         font-size: 28px;
     }
