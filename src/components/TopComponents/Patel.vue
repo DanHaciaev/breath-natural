@@ -22,8 +22,7 @@ export default {
 </script>
 
 <template>
-    
-    <div class="border-2 border-white/25 rounded-3xl p-6 w-96 shadow-lg bg-white/15">
+    <div class="border-2 border-white/25 rounded-3xl p-6 w-96 shadow-lg bg-white/15 block_">
         <div class="flex items-center space-x-4 ">
             <img :src="user.avatar" alt="User avatar" class="w-[60px] h-[60px] rounded-full">
             <div>
@@ -41,5 +40,9 @@ export default {
 </template>
 
 <style>
-/* Дополнительные стили, если нужны */
+@media screen and (max-width: 450px) {
+    .block_{
+        width: 330px;
+    }
+}
 </style>

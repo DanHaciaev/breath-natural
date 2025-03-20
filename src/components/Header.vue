@@ -13,8 +13,8 @@
         </ul>
 
         <div class="flex items-center gap-[64px]">
-            <img src="/ui/search.png" alt="" class="w-[24px]">
-            <img src="/ui/bag.png" alt="" class="w-[24px]">
+            <img src="/ui/search.png" alt="" class="w-[24px] photo">
+            <img src="/ui/bag.png" alt="" class="w-[24px] photo">
             <img src="/ui/menu.png" alt="" class="w-[24px]">
         </div>
     </div>
@@ -23,5 +23,19 @@
 </template>
 
 <style scoped>
+    @media screen and (max-width: 1050px) {
+        .ul_list{
+            display: none;
+        }
+    }
 
+    @media screen and (max-width: 769px) {
+        .head{
+            margin: 0 20px;
+        }
+
+        .photo{
+            display: none;
+        }
+    }
 </style>

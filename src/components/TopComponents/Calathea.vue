@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="top-120px bg-[url(/ui/green-back.png)] bg-contain bg-no-repeat w-[410px] flex justify-center">
+    <div class="top-120px bg-[url(/ui/green-back.png)] bg-contain bg-no-repeat w-[410px] flex justify-center block_">
         <div class="-translate-y-[100px] flex flex-col gap-[24px]">
             <img src="/img/calathea-plant.png" alt="" class="w-[340px]">
             <div class="flex flex-col gap-[24px] pl-[16px]">
@@ -28,3 +28,17 @@ export default {
         </div>
     </div>
 </template>
+
+
+<style scoped>
+@media screen and (max-width: 450px) {
+    .block_{
+        width: 330px;
+    }
+
+    .block_ div img:nth-child(1){
+        width: 250px;
+    }
+}
+
+</style>

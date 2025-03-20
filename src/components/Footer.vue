@@ -1,7 +1,7 @@
 <template>
-    <div class="mx-[70px] mb-[80px]">
-        <div class="flex justify-between items-start">
-            <div class="w-[500px] space-y-4">
+    <div class="mx-[70px] mb-[80px] top_">
+        <div class="flex justify-between items-start top">
+            <div class="w-[500px] space-y-4 text_top">
                 <div class="flex items-center gap-[8px]">
                     <img src="/img/plant_header.png" alt="" class="w-[48px]">
                     <p class="font-[Inter-Black] text-[28px] text-white">Planto.</p>
@@ -25,12 +25,12 @@
             <div class="flex flex-col gap-[40px] relative">
                 <p class="font-[Inter-SemiBold] text-[24px] text-white/75">For Every Update’s</p>
 
-                <label class="w-[370px] h-[50px]">
+                <label class="w-fit h-[50px] label_">
                     <input class="border-[2px] pl-[16px] w-[220px] border-white rounded-l-[10px] h-full font-[Inter-SemiBold] text-white" type="text" placeholder="Enter Email...">
                     <button class="bg-white h-full px-[16px] rounded-r-[10px]">SUBSCRIBE</button>
                 </label>
 
-                <p class="absolute top-[280px] font-[Inter-SemiBold] text-[20px] text-white/75">Planto © All right reserve</p>
+                <p class="absolute top-[280px] font-[Inter-SemiBold] text-[20px] text-white/75 text_">Planto © All right reserve</p>
             </div>
         </div>
 
@@ -45,3 +45,40 @@
         </div>
     </div>
 </template>
+
+<style scoped>
+    @media screen and (max-width: 1200px) {
+        .top{
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+        .top{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .top_{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            margin: 0 20px 80px;
+        }
+
+        .text_{
+            position: unset;
+        }
+
+        .text_top{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        .label_{
+            width: 335px;
+        }
+    }
+</style>
